@@ -7,49 +7,123 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <div class="urlContainer">
+      <div class="changeUrlContainer">
+        <input
+          class="changeUrlInput commonInput"
+          type="text"
+          placeholder="서버 주소를 입력하세요"
+        />
+        <button class="changeUrlBtn commonBtn">서버 바꾸기</button>
+      </div>
+      <div class="changeUrlContainer">
+        <h3>
+          현재 서버: <span class="currentServer">http://localhost:8080</span>
+        </h3>
+      </div>
+    </div>
     <main class="main">
       <div class="formContainer">
-        <div class="urlContainer">
-          <div class="urlTitle">현재 url :</div>
-        </div>
-        <form class="form" action="">
+        <form class="form">
+          <div class="inputBtnContainer">
+            <input
+              class="commonInput signupEndpointInput"
+              type="text"
+              placeholder="회원가입 endpoint"
+            />
+            <button class="commonBtn changeSignupEndpointBtn">수정 하기</button>
+          </div>
+          <h4>
+            endpoint :
+            <span class="signupEndPoint">/user/signup</span>
+          </h4>
+          <h4>api : <span class="signupApi"></span></h4>
+          <div class="inputBtnContainer">
+            <input
+              class="commonInput signupEmailKeyInput"
+              type="text"
+              placeholder="이메일 key 입력"
+            />
+            <button class="commonBtn signupEmailKeyBtn">수정 하기</button>
+          </div>
+          <h4>이메일 key : <span class="signupEmailKey">email</span></h4>
+          <div class="inputBtnContainer">
+            <input
+              class="commonInput signupPwKeyInput"
+              type="text"
+              placeholder="비밀번호 key 입력"
+            />
+            <button class="commonBtn signupPwKeyBtn">수정 하기</button>
+          </div>
+          <h4>비밀번호 key : <span class="signupPwKey">password</span></h4>
           <h2>회원 가입</h2>
           <p class="title">이메일</p>
           <input
-            class="formInput"
+            class="formInput signupEmailInput"
             type="text"
             name="username"
             placeholder="example@naver.com"
           />
           <p class="title">비밀번호</p>
           <input
-            class="formInput"
+            class="formInput signupPwInput"
             type="password"
             name="password"
             placeholder="******"
           />
-          <button class="formButton">회원 가입</button>
+          <button class="formButton signupBtn">회원 가입</button>
         </form>
-        <form class="form" action="">
+        <form class="form">
+          <div class="inputBtnContainer">
+            <input
+              class="commonInput loginEndpointInput"
+              type="text"
+              placeholder="로그인 endpoint"
+            />
+            <button class="commonBtn changeLoginEndpointBtn">수정 하기</button>
+          </div>
+          <h4>
+            endpoint :
+            <span class="loginEndPoint">/user/signin</span>
+          </h4>
+          <h4>api : <span class="loginApi"></span></h4>
+          <div class="inputBtnContainer">
+            <input
+              class="commonInput loginEmailKeyInput"
+              type="text"
+              placeholder="이메일 key 입력"
+            />
+            <button class="commonBtn loginEmailKeyBtn">수정 하기</button>
+          </div>
+          <h4>이메일 key : <span class="loginEmailKey">email</span></h4>
+          <div class="inputBtnContainer">
+            <input
+              class="commonInput loginPwKeyInput"
+              type="text"
+              placeholder="비밀번호 key 입력"
+            />
+            <button class="commonBtn loginPwKeyBtn">수정 하기</button>
+          </div>
+          <h4>비밀번호 key : <span class="loginPwKey">password</span></h4>
           <h2>로그인</h2>
           <p class="title">이메일</p>
           <input
-            class="formInput"
+            class="formInput loginEmailInput"
             type="text"
             name="username"
             placeholder="example@naver.com"
           />
           <p class="title">비밀번호</p>
           <input
-            class="formInput"
+            class="formInput loginPwInput"
             type="password"
             name="password"
             placeholder="******"
           />
-          <button class="formButton">로그인</button>
+          <button class="formButton loginBtn">로그인</button>
         </form>
       </div>
     </main>
-    <script defer src="./login.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
