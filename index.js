@@ -124,8 +124,8 @@ signupBtn.addEventListener("click", (e) => {
     body: JSON.stringify(obj),
   })
     .then((res) => res.json())
-    .then((res) => alert("결과 :", res))
-    .catch((e) => alert("에러: ", e));
+    .then((res) => console.log("결과 :", res))
+    .catch((e) => console.log("에러: ", e));
 });
 
 loginBtn.addEventListener("click", (e) => {
@@ -140,6 +140,6 @@ loginBtn.addEventListener("click", (e) => {
     body: JSON.stringify(obj),
   })
     .then((res) => res.json())
-    .then((res) => alert("결과 :", res))
-    .catch((e) => alert("에러: ", e));
+    .then((res) => console.log("결과 :", res))
+    .catch((e) => console.log("에러: ", e));
 });
