@@ -136,7 +136,7 @@ loginBtn.addEventListener("click", (e) => {
   obj[emailKey] = loginEmailInput.value;
   obj[pwKey] = loginPwInput.value;
   fetch(loginApi.innerText, {
-    method: "POST",
+    method: "GET",
     body: JSON.stringify(obj),
   })
     .then((res) => res.json())
